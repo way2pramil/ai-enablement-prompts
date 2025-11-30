@@ -12,7 +12,6 @@ The resulting file is designed to help AI tools like GitHub Copilot operate more
 <a href="https://youtu.be/X48osWOuaGI" target="_blank">https://youtu.be/X48osWOuaGI</a>
 <br /><br />
 
-👉 Bitovi can help you integrate this into your own SDLC workflow: [AI for Software Teams](https://www.bitovi.com/ai-for-software-teams)
 
 ## Overview
 
@@ -36,7 +35,7 @@ To use this prompt chain, write something similar to the following in your agent
 
 You are assisting with generating a {final_output_file} file using a multi-step prompt chain.
 
-1. Open this repository on GitHub: https://github.com/bitovi/ai-enablement-prompts.
+1. Open this repository on GitHub: "https://github.com/way2pramil/ai-enablement-prompts"
 2. Navigate to the `/understanding-code/instruction-generation` folder within the repo.
 3. Review all the prompt files in this folder WITHOUT executing them. 
     - This will help you understand the full scope of the prompt chain.

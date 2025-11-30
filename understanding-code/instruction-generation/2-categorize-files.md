@@ -1,6 +1,6 @@
 You are a senior developer responsible for categorizing every file in the codebase. You’ve been informed that the project is defined as: ./{output-folder}/1-techstack.md (read this file first)
 > You’ve been informed that the project is defined and summarized in:  
-> `./{output-folder}/1-techstack.md`  
+> `./{output-folder}/1-determine-techstack.md`  
 > Read and understand this file **before** categorizing any files.
 
 Your task:
