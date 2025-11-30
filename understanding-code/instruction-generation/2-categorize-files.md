@@ -1,19 +1,32 @@
 You are a senior developer responsible for categorizing every file in the codebase. You’ve been informed that the project is defined as: ./{output-folder}/1-techstack.md (read this file first)
+> You’ve been informed that the project is defined and summarized in:  
+> `./{output-folder}/1-techstack.md`  
+> Read and understand this file **before** categorizing any files.
 
 Your task:
 
-- Visit every file in the codebase. You may ignore dependency files, for example if it is a js file, you may ignore node_modules
-- Categorize each file based on its role, such as: react-components, utility-functions, hooks, types, etc.
+> - Visit every relevant project file in the codebase.  
+>   You may ignore:
+>   - Dependency directories (e.g., `node_modules`, `vendor`, `.venv`)  
+>   - Build outputs (e.g., `dist`, `build`, `out`)  
+>   - Generated artifacts (e.g., `.generated.*`, API clients created by tooling)  
+>   - Binary assets (images, fonts, media), unless they are core to the domain
+- Categorize each file based on its role, such as: react-components, utility-functions, hooks,domain-services, infrastructure, types, etc.
 
 Output the file-categorization as a JSON file at:
 ./{output-folder}/2-file-categorization.json
 
+> All file paths in `2-file-categorization.json` must be **relative to the project root** and use a consistent format (e.g., `./src/...`).
+Example format:
 ```json
 {
-  "react-components": ["./src/components/Button.tsx"],
-  "hooks": ["./src/hooks/useUser.ts"]
+  "ui-components": ["./src/components/Button.tsx"],
+  "hooks": ["./src/hooks/useUser.ts"],
+  "domain-services": ["./src/services/invoiceService.ts"],
+  "infrastructure": ["./infra/terraform/main.tf"],
+  "tests": ["./tests/user.test.ts"]
 }
-```
+
 
 A single file can appear in multiple categories if appropriate.
 
